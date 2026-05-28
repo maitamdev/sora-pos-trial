@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sora POS - Hệ thống Quản lý Bán hàng Thông minh</title>
+  <meta name="description" content="Hệ thống quản lý bán hàng đám mây tích hợp AI, tối ưu hóa doanh thu và quản lý kho hàng tự động dành cho các cửa hàng bán lẻ.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Styles & Icons -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Ambient background glow blobs -->
+  <div class="glow-blob glow-purple"></div>
+  <div class="glow-blob glow-teal"></div>
+  <div class="glow-blob glow-blue"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">S</span>
+        Sora<span>POS</span>
+      </a>
+      <nav class="nav">
+        <a href="#features" class="nav-link">Tính năng</a>
+        <a href="#pricing" class="nav-link">Bảng giá</a>
+        <a href="#about" class="nav-link">Về chúng tôi</a>
+      </nav>
+      <div class="header-actions">
+        <a href="http://localhost:5173/login" id="btn-login-redirect" class="btn btn-outline">Đăng nhập</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <!-- Hero Left: Content -->
+      <div class="hero-content">
+        <div class="badge">💡 Giải pháp POS thời đại mới</div>
+        <h1 class="hero-title">
+          Quản lý bán hàng <br>
+          <span class="text-gradient">Thông minh hơn với AI</span>
+        </h1>
+        <p class="hero-desc">
+          Sora POS là hệ thống quản lý bán hàng điện toán đám mây hiện đại. Tích hợp trí tuệ nhân tạo để gợi ý nhập kho, phân tích xu hướng doanh thu và tự động hóa vận hành toàn diện cho cửa hàng của bạn.
+        </p>
+
+        <!-- Features list -->
+        <ul class="feature-list">
+          <li class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            </div>
+            <div>
+              <strong>Gợi ý nhập hàng bằng AI:</strong> Tự động phân tích tốc độ bán ra để cảnh báo và đề xuất số lượng nhập kho tối ưu.
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+              </svg>
+            </div>
+            <div>
+              <strong>Báo cáo trực quan tức thì:</strong> Biểu đồ doanh thu, lợi nhuận, chi phí chi tiết theo ngày/tuần/tháng thời gian thực.
+            </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+              </svg>
+            </div>
+            <div>
+              <strong>Giao diện POS bán hàng mượt mà:</strong> Thiết kế thân thiện, tương thích máy quét mã vạch và hỗ trợ quét camera tiện lợi.
+            </div>
+          </li>
+        </ul>
+
+        <!-- Stats -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-number">99.9%</div>
+            <div class="stat-label">Thời gian uptime</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">30%</div>
+            <div class="stat-label">Tăng trưởng doanh số</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10k+</div>
+            <div class="stat-label">Cửa hàng tin dùng</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Registration Glassmorphic Card -->
+      <div class="hero-form-wrapper">
+        <div class="register-card">
+          <h2 class="card-title">Đăng ký cửa hàng mới</h2>
+          <p class="card-subtitle">Trải nghiệm miễn phí đầy đủ tính năng trong 14 ngày</p>
+          
+          <form id="register-form" class="register-form">
+            <!-- Tên chủ cửa hàng -->
+            <div class="form-group">
+              <label for="full_name" class="form-label">Họ và tên chủ cửa hàng</label>
+              <div class="input-wrapper">
+                <input type="text" id="full_name" class="form-input" placeholder="Nguyễn Văn A" required minlength="2">
+              </div>
+            </div>
+
+            <!-- Tên cửa hàng -->
+            <div class="form-group">
+              <label for="store_name" class="form-label">Tên cửa hàng / Doanh nghiệp</label>
+              <div class="input-wrapper">
+                <input type="text" id="store_name" class="form-input" placeholder="Sora Mart, Coffee Shop..." required minlength="2">
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email" class="form-label">Địa chỉ Email</label>
+              <div class="input-wrapper">
+                <input type="email" id="email" class="form-input" placeholder="chu_cua_hang@example.com" required>
+              </div>
+            </div>
+
+            <!-- Số điện thoại -->
+            <div class="form-group">
+              <label for="phone" class="form-label">Số điện thoại</label>
+              <div class="input-wrapper">
+                <input type="tel" id="phone" class="form-input" placeholder="0987654321" required>
+              </div>
+            </div>
+
+            <!-- Mật khẩu -->
+            <div class="form-group">
+              <label for="password" class="form-label">Mật khẩu đăng nhập</label>
+              <div class="input-wrapper">
+                <input type="password" id="password" class="form-input" placeholder="Tối thiểu 6 ký tự" required minlength="6">
+              </div>
+            </div>
+
+            <!-- Agree Terms -->
+            <div class="form-checkbox">
+              <input type="checkbox" id="agree" required checked>
+              <label for="agree">Tôi đồng ý với các Điều khoản & Chính sách dịch vụ của Sora POS.</label>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="btn-submit" class="btn btn-primary btn-block">
+              <span id="btn-text">Bắt đầu dùng thử miễn phí</span>
+              <span id="btn-loader" class="loader hidden"></span>
+            </button>
+          </form>
+          
+          <div class="card-footer">
+            Đã có tài khoản? <a href="http://localhost:5173/login" id="link-login">Đăng nhập ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>
