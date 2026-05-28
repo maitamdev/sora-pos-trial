@@ -6,8 +6,8 @@
 
 // Configurable target URLs - Edit these when deploying to production (e.g. Vercel)
 const CONFIG = {
-  API_URL: 'http://localhost:3001', // Backend API URL
-  POS_URL: 'http://localhost:5173', // Frontend React POS App URL
+  API_URL: 'https://sora-pos-backend.vercel.app', // Backend API URL
+  POS_URL: 'https://sora-pos.vercel.app', // Frontend React POS App URL
 };
 
 document.addEventListener('DOMContentLoaded', () => {
